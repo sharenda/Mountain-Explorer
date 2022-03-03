@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF03FCA227D03FFA005335B9 /* Mountain_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCA127D03FFA005335B9 /* Mountain_ExplorerApp.swift */; };
+		EF03FCA927D03FFB005335B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF03FCA827D03FFB005335B9 /* Preview Assets.xcassets */; };
+		EF03FCB127D04014005335B9 /* list-of-country.json in Resources */ = {isa = PBXBuildFile; fileRef = EF03FCB027D04014005335B9 /* list-of-country.json */; };
+		EF03FCB427D0402C005335B9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCB327D0402C005335B9 /* ImagePicker.swift */; };
+		EF03FCB727D04085005335B9 /* Mountain_Explorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCB527D04085005335B9 /* Mountain_Explorer.xcdatamodeld */; };
+		EF03FCCD27D0418C005335B9 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCB927D0418C005335B9 /* DiscoverViewModel.swift */; };
+		EF03FCCE27D0418C005335B9 /* CountryPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCBA27D0418C005335B9 /* CountryPickerViewModel.swift */; };
+		EF03FCCF27D0418C005335B9 /* PeakFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCBB27D0418C005335B9 /* PeakFormViewModel.swift */; };
+		EF03FCD027D0418C005335B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCBD27D0418C005335B9 /* Persistence.swift */; };
+		EF03FCD127D0418C005335B9 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCBE27D0418C005335B9 /* Country.swift */; };
+		EF03FCD227D0418C005335B9 /* Peak.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCBF27D0418C005335B9 /* Peak.swift */; };
+		EF03FCD327D0418C005335B9 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC027D0418C005335B9 /* Mountain.swift */; };
+		EF03FCD427D0418C005335B9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC227D0418C005335B9 /* FavoritesView.swift */; };
+		EF03FCD527D0418C005335B9 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC327D0418C005335B9 /* CountryPicker.swift */; };
+		EF03FCD627D0418C005335B9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC427D0418C005335B9 /* MapView.swift */; };
+		EF03FCD727D0418C005335B9 /* AddNewPeakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC527D0418C005335B9 /* AddNewPeakView.swift */; };
+		EF03FCD827D0418C005335B9 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC627D0418C005335B9 /* DiscoverView.swift */; };
+		EF03FCD927D0418C005335B9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC727D0418C005335B9 /* WebView.swift */; };
+		EF03FCDA27D0418C005335B9 /* PeakDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC827D0418C005335B9 /* PeakDetailView.swift */; };
+		EF03FCDB27D0418C005335B9 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCC927D0418C005335B9 /* ReviewView.swift */; };
+		EF03FCDC27D0418C005335B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCCA27D0418C005335B9 /* Main.swift */; };
+		EF03FCDD27D0418C005335B9 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03FCCB27D0418C005335B9 /* TutorialView.swift */; };
+		EF03FCE027D04374005335B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF03FCDF27D04374005335B9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF03FC9E27D03FFA005335B9 /* Mountain Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mountain Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF03FCA127D03FFA005335B9 /* Mountain_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain_ExplorerApp.swift; sourceTree = "<group>"; };
+		EF03FCA827D03FFB005335B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF03FCB027D04014005335B9 /* list-of-country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "list-of-country.json"; sourceTree = "<group>"; };
+		EF03FCB327D0402C005335B9 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EF03FCB627D04085005335B9 /* Mountain Explorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Mountain Explorer.xcdatamodel"; sourceTree = "<group>"; };
+		EF03FCB927D0418C005335B9 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
+		EF03FCBA27D0418C005335B9 /* CountryPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerViewModel.swift; sourceTree = "<group>"; };
+		EF03FCBB27D0418C005335B9 /* PeakFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakFormViewModel.swift; sourceTree = "<group>"; };
+		EF03FCBD27D0418C005335B9 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EF03FCBE27D0418C005335B9 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		EF03FCBF27D0418C005335B9 /* Peak.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Peak.swift; sourceTree = "<group>"; };
+		EF03FCC027D0418C005335B9 /* Mountain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
+		EF03FCC227D0418C005335B9 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		EF03FCC327D0418C005335B9 /* CountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
+		EF03FCC427D0418C005335B9 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EF03FCC527D0418C005335B9 /* AddNewPeakView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewPeakView.swift; sourceTree = "<group>"; };
+		EF03FCC627D0418C005335B9 /* DiscoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		EF03FCC727D0418C005335B9 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		EF03FCC827D0418C005335B9 /* PeakDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeakDetailView.swift; sourceTree = "<group>"; };
+		EF03FCC927D0418C005335B9 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		EF03FCCA27D0418C005335B9 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		EF03FCCB27D0418C005335B9 /* TutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		EF03FCDF27D04374005335B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Mountain app/Mountain app/Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF03FC9B27D03FFA005335B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF03FC9527D03FFA005335B9 = {
+			isa = PBXGroup;
+			children = (
+				EF03FCA027D03FFA005335B9 /* Mountain Explorer */,
+				EF03FC9F27D03FFA005335B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF03FC9F27D03FFA005335B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FC9E27D03FFA005335B9 /* Mountain Explorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF03FCA027D03FFA005335B9 /* Mountain Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCAF27D04014005335B9 /* Resources */,
+				EF03FCB227D0402C005335B9 /* Util */,
+				EF03FCBC27D0418C005335B9 /* Model */,
+				EF03FCC127D0418C005335B9 /* View */,
+				EF03FCB827D0418C005335B9 /* ViewModel */,
+				EF03FCA127D03FFA005335B9 /* Mountain_ExplorerApp.swift */,
+				EF03FCB527D04085005335B9 /* Mountain_Explorer.xcdatamodeld */,
+				EF03FCDF27D04374005335B9 /* Assets.xcassets */,
+				EF03FCA727D03FFB005335B9 /* Preview Content */,
+			);
+			path = "Mountain Explorer";
+			sourceTree = "<group>";
+		};
+		EF03FCA727D03FFB005335B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCA827D03FFB005335B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF03FCAF27D04014005335B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCB027D04014005335B9 /* list-of-country.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF03FCB227D0402C005335B9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCB327D0402C005335B9 /* ImagePicker.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EF03FCB827D0418C005335B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCBB27D0418C005335B9 /* PeakFormViewModel.swift */,
+				EF03FCBA27D0418C005335B9 /* CountryPickerViewModel.swift */,
+				EF03FCB927D0418C005335B9 /* DiscoverViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF03FCBC27D0418C005335B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCBD27D0418C005335B9 /* Persistence.swift */,
+				EF03FCBF27D0418C005335B9 /* Peak.swift */,
+				EF03FCC027D0418C005335B9 /* Mountain.swift */,
+				EF03FCBE27D0418C005335B9 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF03FCC127D0418C005335B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF03FCCA27D0418C005335B9 /* Main.swift */,
+				EF03FCCB27D0418C005335B9 /* TutorialView.swift */,
+				EF03FCC227D0418C005335B9 /* FavoritesView.swift */,
+				EF03FCC827D0418C005335B9 /* PeakDetailView.swift */,
+				EF03FCC927D0418C005335B9 /* ReviewView.swift */,
+				EF03FCC427D0418C005335B9 /* MapView.swift */,
+				EF03FCC527D0418C005335B9 /* AddNewPeakView.swift */,
+				EF03FCC327D0418C005335B9 /* CountryPicker.swift */,
+				EF03FCC627D0418C005335B9 /* DiscoverView.swift */,
+				EF03FCC727D0418C005335B9 /* WebView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF03FC9D27D03FFA005335B9 /* Mountain Explorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF03FCAC27D03FFB005335B9 /* Build configuration list for PBXNativeTarget "Mountain Explorer" */;
+			buildPhases = (
+				EF03FC9A27D03FFA005335B9 /* Sources */,
+				EF03FC9B27D03FFA005335B9 /* Frameworks */,
+				EF03FC9C27D03FFA005335B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mountain Explorer";
+			productName = "Mountain Explorer";
+			productReference = EF03FC9E27D03FFA005335B9 /* Mountain Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF03FC9627D03FFA005335B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					EF03FC9D27D03FFA005335B9 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = EF03FC9927D03FFA005335B9 /* Build configuration list for PBXProject "Mountain Explorer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF03FC9527D03FFA005335B9;
+			productRefGroup = EF03FC9F27D03FFA005335B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF03FC9D27D03FFA005335B9 /* Mountain Explorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF03FC9C27D03FFA005335B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF03FCA927D03FFB005335B9 /* Preview Assets.xcassets in Resources */,
+				EF03FCE027D04374005335B9 /* Assets.xcassets in Resources */,
+				EF03FCB127D04014005335B9 /* list-of-country.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF03FC9A27D03FFA005335B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF03FCD327D0418C005335B9 /* Mountain.swift in Sources */,
+				EF03FCB427D0402C005335B9 /* ImagePicker.swift in Sources */,
+				EF03FCDB27D0418C005335B9 /* ReviewView.swift in Sources */,
+				EF03FCD127D0418C005335B9 /* Country.swift in Sources */,
+				EF03FCD027D0418C005335B9 /* Persistence.swift in Sources */,
+				EF03FCCF27D0418C005335B9 /* PeakFormViewModel.swift in Sources */,
+				EF03FCD227D0418C005335B9 /* Peak.swift in Sources */,
+				EF03FCD827D0418C005335B9 /* DiscoverView.swift in Sources */,
+				EF03FCD627D0418C005335B9 /* MapView.swift in Sources */,
+				EF03FCDC27D0418C005335B9 /* Main.swift in Sources */,
+				EF03FCD727D0418C005335B9 /* AddNewPeakView.swift in Sources */,
+				EF03FCCD27D0418C005335B9 /* DiscoverViewModel.swift in Sources */,
+				EF03FCD927D0418C005335B9 /* WebView.swift in Sources */,
+				EF03FCDD27D0418C005335B9 /* TutorialView.swift in Sources */,
+				EF03FCD427D0418C005335B9 /* FavoritesView.swift in Sources */,
+				EF03FCB727D04085005335B9 /* Mountain_Explorer.xcdatamodeld in Sources */,
+				EF03FCA227D03FFA005335B9 /* Mountain_ExplorerApp.swift in Sources */,
+				EF03FCD527D0418C005335B9 /* CountryPicker.swift in Sources */,
+				EF03FCDA27D0418C005335B9 /* PeakDetailView.swift in Sources */,
+				EF03FCCE27D0418C005335B9 /* CountryPickerViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EF03FCAA27D03FFB005335B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF03FCAB27D03FFB005335B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF03FCAD27D03FFB005335B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mountain Explorer/Preview Content\"";
+				DEVELOPMENT_TEAM = U59ZNPP26X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to your photo library so you can pick your favorite mountain photo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.sharenda.pavel.Mountain-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF03FCAE27D03FFB005335B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mountain Explorer/Preview Content\"";
+				DEVELOPMENT_TEAM = U59ZNPP26X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to your photo library so you can pick your favorite mountain photo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.sharenda.pavel.Mountain-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF03FC9927D03FFA005335B9 /* Build configuration list for PBXProject "Mountain Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF03FCAA27D03FFB005335B9 /* Debug */,
+				EF03FCAB27D03FFB005335B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF03FCAC27D03FFB005335B9 /* Build configuration list for PBXNativeTarget "Mountain Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF03FCAD27D03FFB005335B9 /* Debug */,
+				EF03FCAE27D03FFB005335B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EF03FCB527D04085005335B9 /* Mountain_Explorer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF03FCB627D04085005335B9 /* Mountain Explorer.xcdatamodel */,
+			);
+			currentVersion = EF03FCB627D04085005335B9 /* Mountain Explorer.xcdatamodel */;
+			path = Mountain_Explorer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF03FC9627D03FFA005335B9 /* Project object */;
+}
