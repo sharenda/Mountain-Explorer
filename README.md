@@ -27,11 +27,15 @@ Below is a description of all the things I have implemented.
 
 **- List Deletion, Swipe Actions**
 
-**- Adding a Search Bar Using Searchable** 
+**- Adding a Search Bar Using Searchable**
+
+**- Working with Biometric Authentication** 
 
 <nobr> <kbd> <img src="https://user-images.githubusercontent.com/81448509/156764814-48c70574-5e13-400a-a8d9-148be6a39edb.png" width="244" />
 <img src="https://user-images.githubusercontent.com/81448509/156764830-1ee4fba8-d46c-451a-9163-5df7f593da37.png" width="244" />
-<img src="https://user-images.githubusercontent.com/81448509/156765441-f188a82e-5ef9-4b52-a1bc-c1b983e40002.png" width="244" /> </kbd> </nobr>
+<img src="https://user-images.githubusercontent.com/81448509/156765441-f188a82e-5ef9-4b52-a1bc-c1b983e40002.png" width="244" /> 
+<img src="https://user-images.githubusercontent.com/81448509/157696041-a2e02632-3d69-46d5-8832-39ba8627ef2a.png" width="244" /> 
+<img src="https://user-images.githubusercontent.com/81448509/157696069-994289cc-9a66-42e1-ab24-f0496d1cdf4c.png" width="244" /> </kbd> </nobr>
 
 ##
 
@@ -83,7 +87,6 @@ Below is a description of all the things I have implemented.
 <kbd> <img src="https://user-images.githubusercontent.com/81448509/156779389-8e7117f1-7abf-4362-9d07-4907c4287925.png" width="244" /> </kbd>
 
 ##
-
 
 
 
