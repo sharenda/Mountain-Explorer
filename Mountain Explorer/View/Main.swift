@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct Main: View {
+    @State private var favoritesViewAlreadyAppeared = false
     var body: some View {
         TabView {
-            FavoritesView()
+            FavoritesView(alreadyAppeared: favoritesViewAlreadyAppeared)
                 .tabItem {
                     Label("Favorites", systemImage: "tag.fill")
                 }
                 .tag(0)
+                .onDisappear {
+                    favoritesViewAlreadyAppeared = true
+                }
             
             DiscoverView()
                 .tabItem {

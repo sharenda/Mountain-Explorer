@@ -387,6 +387,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to your photo library so you can pick your favorite mountain photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -418,6 +419,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "You need to grant the app access to your camera in order to take photos.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You need to grant the app access to your photo library so you can pick your favorite mountain photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

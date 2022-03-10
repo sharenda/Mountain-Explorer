@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct FavoritesView: View {
     @FetchRequest(entity: Peak.entity(), sortDescriptors: []) var peaks: FetchedResults<Peak>
@@ -13,7 +14,9 @@ struct FavoritesView: View {
     @State private var showNewPeak = false
     @State private var showWalkthrough = false
     @State private var searchText = ""
+    @State private var isUnlocked = false
     @AppStorage("hasViewedWalkthrough") var hasViewedWalkthrough: Bool = false
+    let alreadyAppeared: Bool
     
     var body: some View {
         NavigationView {
@@ -33,16 +36,32 @@ struct FavoritesView: View {
                     .listRowSeparator(.hidden)
                     .padding(.top, 100)
                 } else {
-                    ForEach(peaks.indices, id: \.self) { index in
-                        NavigationLink {
-                            PeakDetailView(peak: peaks[index])
-                                .navigationBarBackButtonHidden(true)
-                        } label: {
-                            BasicTextImageRow(peak: peaks[index])
+                    if isUnlocked {
+                        ForEach(peaks.indices, id: \.self) { index in
+                            NavigationLink {
+                                PeakDetailView(peak: peaks[index])
+                                    .navigationBarBackButtonHidden(true)
+                            } label: {
+                                BasicTextImageRow(peak: peaks[index])
+                            }
                         }
+                        .onDelete(perform: deleteRecord)
+                        .listRowSeparator(.hidden)
+                    } else {
+                        Button {
+                            authenticate()
+                        } label: {
+                            Image(systemName: "faceid")
+                                .resizable()
+                                .foregroundColor(.blue)
+                                .scaledToFit()
+                                .frame(minWidth: 0, maxWidth: .infinity)
+                                .frame(maxHeight: 90)
+                            
+                        }
+                        .listRowSeparator(.hidden)
+                        .padding(.top, 100)
                     }
-                    .onDelete(perform: deleteRecord)
-                    .listRowSeparator(.hidden)
                 }
             }
             .searchable(text: $searchText)
@@ -66,6 +85,9 @@ struct FavoritesView: View {
         }
         .onAppear() {
             showWalkthrough = hasViewedWalkthrough ? false : true
+            if !alreadyAppeared {
+                authenticate()
+            }
         }
         .onChange(of: searchText) { searchText in
             let predicate = searchText.isEmpty ? NSPredicate(value: true) : NSPredicate(format: "title CONTAINS[c] %@", searchText)
@@ -107,6 +129,28 @@ struct FavoritesView: View {
         // Schedule the notification
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
+    
+    private func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+        
+        // check whether biometric authentication is possible
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // it's possible, so go ahead and use it
+            let reason = "We need to unlock your data."
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                // authentication has now completed
+                if success {
+                    isUnlocked = true
+                } else {
+                    // there was a problem
+                }
+            }
+        } else {
+            isUnlocked = true
+        }
+    }
 }
 
 struct BasicTextImageRow: View {
@@ -144,6 +188,6 @@ struct BasicTextImageRow: View {
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        FavoritesView(alreadyAppeared: true)
     }
 }
